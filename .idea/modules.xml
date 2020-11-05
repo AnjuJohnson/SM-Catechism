@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Catechism.iml" filepath="$PROJECT_DIR$/Catechism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Catechism.iml" filepath="$PROJECT_DIR$/.idea/modules/Catechism.iml" group="Catechism" />
+      <module fileurl="file://$PROJECT_DIR$/android-flipview-1.1.0/android-flipview-1.1.0.iml" filepath="$PROJECT_DIR$/android-flipview-1.1.0/android-flipview-1.1.0.iml" group="Catechism/android-flipview-1.1.0" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Catechism/app" />
     </modules>
   </component>
 </project>
