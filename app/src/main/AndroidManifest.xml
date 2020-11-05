@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zinedroid.syromalabar.smartcatechism">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <application
+        android:name="com.zinedroid.syromalabar.smartcatechism.Base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--<activity
+            android:name="com.zinedroid.mobile.smsmartcatechism.activity.SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+           >-->
+
+        <activity
+            android:name="com.zinedroid.syromalabar.smartcatechism.activity.HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--<activity
+            android:name="com.zinedroid.mobile.smsmartcatechism.activity.HomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme">
+        </activity>-->
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="catecism.db" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.zinedroid.syromalabar.smartcatechism" />
+
+
+        <service android:name="com.zinedroid.syromalabar.smartcatechism.serviceandreceiver.OfflineService"></service>
+
+        <receiver
+            android:name="com.zinedroid.syromalabar.smartcatechism.serviceandreceiver.NetworkStatusReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Intent filters for broadcast receiver -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9508a709ede4757af13f170746ce728c1f55d4f8" />
+    </application>
+
+</manifest>

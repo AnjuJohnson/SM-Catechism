@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_common"
+              android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+   >
+
+    <TextView
+        android:id="@+id/mClassTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Class 10"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/noDataTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_data"
+        android:textSize="@dimen/_16sdp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mChapterRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:layout_marginRight="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_3sdp"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:visibility="visible"/>
+</LinearLayout>

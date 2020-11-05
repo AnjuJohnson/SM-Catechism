@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mQuestionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. What is the Question?"
+        android:textColor="@color/red"/>
+
+    <RadioGroup
+        android:id="@+id/mQuestionradioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/mOptionRadioButton1"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/mOptionRadioButton2"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/mOptionRadioButton3"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/mOptionRadioButton4"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mSubmitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_button_red"
+        android:clickable="true"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:text="Submit Answer"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"/>
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/poc_bible"
+        android:icon="@drawable/bible"
+        android:title="POC Bible"/>
+    <item
+        android:id="@+id/daily_saints"
+        android:icon="@drawable/saints"
+        android:title="Daily Saints"/>
+    <item
+        android:id="@+id/docat"
+        android:icon="@drawable/youcat"
+        android:title="Youcat"/>
+    <item
+        android:id="@+id/nav_manage"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/lang_settings"
+                android:icon="@drawable/language"
+                android:title="Change Language"/>
+            <item
+                android:id="@+id/class_settings"
+                android:icon="@drawable/classes"
+                android:title="Change Class"/>
+            <item
+                android:id="@+id/font_change"
+                android:icon="@drawable/fontchange"
+                android:title="Change Font"
+
+                />
+        </menu>
+    </item>
+
+    <item
+        android:orderInCategory="9"
+        android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"/>
+           <!-- <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"/>-->
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout"
+        android:orderInCategory="10"
+        android:title="Log out"/>
+</menu>
